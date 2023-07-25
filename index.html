@@ -20,6 +20,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Remix Icon CDN link url(https://github.com/Remix-Design/RemixIcon) >>> used to select different png icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <!-- Favicon -->
     <link rel="icon" href="assets/imgs/001_logo.png" type="image.png" />
     <title>Tech Cubes</title>
@@ -91,8 +97,12 @@
               Providing Technological & Digital Solutions For Your Business
             </h4>
             <div>
-              <a href="#" class="btn btn-brand me-3 my-4"> Get Started </a>
-              <a href="#" class="btn btn-light ms-3 my-4"> Our Portfolio </a>
+              <a href="#services" class="btn btn-brand me-3 my-4">
+                Our Services
+              </a>
+              <a href="#portfolio" class="btn btn-light ms-3 my-4">
+                Our Portfolio
+              </a>
             </div>
           </div>
         </div>
@@ -103,38 +113,13 @@
     <section id="about">
       <div class="container">
         <div class="row d-flex align-items-center text-center">
-          <col-12>
+          <div class="col-12">
             <h2 class="display-4 fw-semibold">About Us</h2>
-            <h2 class="display-4">We Innovate, Because We Can.</h2>
-            <h5>
-              Thinking out of the box is the only option we work with. We
-              innovate business and craft success.
-            </h5>
-          </col-12>
-        </div>
-        <div class="row my-3">
-          <div class="col-lg-6 d-flex align-items-center text-center">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-              neque molestiae repellendus architecto, illum pariatur debitis
-              quis ullam, officia veritatis, aut eos excepturi sint! Animi quasi
-              porro officiis tenetur, excepturi, autem sed consequuntur repellat
-              placeat, mollitia quia obcaecati odio magni voluptate nisi
-              accusamus. In natus perspiciatis repellendus. Amet, saepe laborum?
-              Perferendis optio, odio sit vel quas incidunt vero illum mollitia
-              officia, eius cumque velit, eos nulla est nostrum. Ullam rem
-              voluptas quasi voluptatum. Illum quaerat placeat magnam nemo
-              voluptate deserunt maxime modi odio? Voluptates magnam ipsa,
-              architecto cumque inventore odio quas. Dolore laudantium
-              voluptatem eum temporibus aut inventore quod ea. Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Provident alias
-              consectetur laudantium similique voluptatem repudiandae a quasi
-              obcaecati veniam ea? Dolorem, saepe atque distinctio soluta
-              ratione totam nesciunt, impedit, rerum velit dicta vero omnis!
-              Alias rerum veritatis unde reiciendis, aliquid nulla deleniti
-              laborum dolorem mollitia, autem voluptatem animi facere delectus.
-            </p>
+            <h5 class="display-4">We Innovate, Because We Can.</h5>
           </div>
+        </div>
+        <div class="row my-3 justify-content-between align-items-center">
+          <!-- About > img-left -->
           <div class="col-lg-6">
             <img
               src="assets/imgs/003_about_a.jpg"
@@ -144,6 +129,45 @@
               height="100%"
             />
           </div>
+          <div class="col-lg-6">
+            <h1>Our Values</h1>
+            <p id="about-inner">
+              Tech Cubes is residing on the pillars of following values
+            </p>
+            <!-- About > icon-box -->
+            <div class="d-flex pt-4 my-4">
+              <div class="icon-box me-4">
+                <!-- icon source: ( https://remixicon.com/ ) -->
+                <i class="ri-vip-crown-2-fill"></i>
+              </div>
+              <div>
+                <h5>Customer First</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="d-flex pt-4 my-4">
+              <div class="icon-box me-4">
+                <!-- icon source: ( https://remixicon.com/ ) -->
+                <i class="ri-lightbulb-flash-fill"></i>
+              </div>
+              <div>
+                <h5>Being Innovative</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="d-flex pt-4 my-4">
+              <div class="icon-box me-4">
+                <!-- icon source: ( https://remixicon.com/ ) -->
+                <i class="ri-timer-fill"></i>
+              </div>
+              <div>
+                <h5>Meeting Deadlines</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -152,13 +176,13 @@
     <section id="services" class="section-padding">
       <div class="container">
         <div class="row d-flex align-items-center text-center">
-          <col-12>
+          <div class="col-12">
             <h2 class="display-4 fw-semibold text-white">Our Services</h2>
             <h5 class="text-white">
               We provide complete tech & Digital Solution to our clients. Please
               check our digital services
             </h5>
-          </col-12>
+          </div>
         </div>
       </div>
 
@@ -171,7 +195,7 @@
                 class="card-img-top"
                 alt="web dev"
               />
-              <div class="card-body">
+              <div class="card-body my-3">
                 <h5 class="card-title">Web Development</h5>
                 <p class="card-text">
                   This is a longer card with supporting text below as a natural
@@ -187,7 +211,7 @@
                 class="card-img-top"
                 alt="A.I"
               />
-              <div class="card-body">
+              <div class="card-body my-3">
                 <h5 class="card-title">M.L & A.I</h5>
                 <p class="card-text">
                   This is a longer card with supporting text below as a natural
@@ -229,6 +253,401 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="display-4 fw-semibold">Portfolio</h2>
+            <h5>
+              Actions speak louder than words. Lets have a look at our projects
+            </h5>
+          </div>
+        </div>
+        <div class="row text-center py-lg-5 py-4">
+          <!-- oneidentiti -->
+          <div class="col-lg-3 col-sm-6 col-12 container-fluid">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12" id="check">
+                    <a href="https://oneidentiti.com/" target="_blank">
+                      <img
+                        src="assets/imgs/010_one-identiti.png"
+                        alt="one identiti"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">One Identiti</h5>
+              <p>
+                One Identiti is an E-Commerce Clothing Store that our team
+                built.
+              </p>
+            </div>
+          </div>
+
+          <!-- TESLA -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.tesla.com/" target="_blank">
+                      <img
+                        src="assets/imgs/011_tesla.png"
+                        alt="tesla"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">Tesla</h5>
+              <p>
+                Tesla is one of the leading Electric cars manufacturer in USA.
+              </p>
+            </div>
+          </div>
+
+          <!-- Apple -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.apple.com/" target="_blank">
+                      <img
+                        src="assets/imgs/012_apple.png"
+                        alt="Apple"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">Apple</h5>
+              <p>Apple is one of the leading electronics brand in USA.</p>
+            </div>
+          </div>
+
+          <!-- Real Living -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.reallivingsthlm.se/" target="_blank">
+                      <img
+                        src="assets/imgs/013_real-living.png"
+                        alt="ikea"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">Real Living</h5>
+              <p>
+                Real Living is one of the most innovative furniture
+                manufacturing brand in Europe.
+              </p>
+            </div>
+          </div>
+
+          <!-- SpaceX -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.spacex.com/" target="_blank">
+                      <img
+                        src="assets/imgs/014_spaceX.png"
+                        alt="Space X"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">SpaceX</h5>
+              <p>SpaceX is the only privately owned Sapce Organization.</p>
+            </div>
+          </div>
+
+          <!-- Manchester United -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.manutd.com/" target="_blank">
+                      <img
+                        src="assets/imgs/015_man-untd.png"
+                        alt="Manchester United"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">Manchester United</h5>
+              <p>Manchester United is one of the world's best football club.</p>
+            </div>
+          </div>
+
+          <!-- Zara -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.zara.com/" target="_blank">
+                      <img
+                        src="assets/imgs/016_zara.png"
+                        alt="Zara"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">Zara</h5>
+              <p>
+                Zara is one of the best and most innovative apparel brands in
+                the world.
+              </p>
+            </div>
+          </div>
+
+          <!-- Rolex -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="portfolio theme-shadow">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.rolex.com/en-us" target="_blank">
+                      <img
+                        src="assets/imgs/017_rolex.png"
+                        alt="Rolex"
+                        class="prt-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-2">Rolex</h5>
+              <p>Rolex simply creates master piece in the watch industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="section-padding">
+      <div class="container-fluid">
+        <div class="row my-2">
+          <div class="col-12 text-center">
+            <h2 class="display-4 fw-semibold text-white">Reviews</h2>
+            <h5 class="text-white">Learn what people say about work.</h5>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/imgs/020_christina.jpg"
+                class="card-img-top"
+                alt="review"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Christina</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati mollitia impedit corrupti vitae aliquid dolorum..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/imgs/021_ali-morshedlou.jpg"
+                class="card-img-top"
+                alt="review"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ali Mashroor</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto ex eaque temporibus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/imgs/023_David_Chaudhary.jpg"
+                class="card-img-top"
+                alt="review"
+              />
+              <div class="card-body">
+                <h5 class="card-title">David Gernard</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                  laudantium commodi quas facere vitae veritatis deserunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/imgs/024_Emily-Khan.jpg"
+                class="card-img-top"
+                alt="review"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Emily Jade</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  culpa quia ea quas adipisci.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/imgs/025_hamid-tajik.jpg"
+                class="card-img-top"
+                alt="review"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hamid Tajik</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  culpa quia ea quas adipisci.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/imgs/026_Peter-Denkins.jpg"
+                class="card-img-top"
+                alt="review"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Peter Denkins</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  culpa quia ea quas adipisci.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team" class="section-padding">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-12 text-center">
+            <h2 class="display-4 fw-semibold">Our Team</h2>
+            <h5>
+              Team work is dream work & We have the best team in the world
+            </h5>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 col-sm-12 col-12">
+            <img
+              src="assets/imgs/027_khatarnak-coder.jpg"
+              alt="team"
+              class="team-img"
+            />
+            <h3>Khatarnak Coder</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, quia.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <img
+              src="assets/imgs/028_team-lead.jpg"
+              alt="team"
+              class="team-img"
+            />
+            <h3>Team Lead</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, quia.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <img
+              src="assets/imgs/029_junior-developer.jpg"
+              alt="team"
+              class="team-img"
+            />
+            <h3>Junior Developer</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, quia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-12 text-center">
+            <h2 class="display-4 fw-semibold text-white">Contact Us</h2>
+            <h5 class="text-white">
+              Want to Hire us? Just fill the form and hit the submit button
+            </h5>
+          </div>
+        </div>
+        <form class="text-center">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-white"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-white"
+              >Please share your project details in the comment box below</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </section>
 

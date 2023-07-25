@@ -7,7 +7,7 @@
     --c-brand-rgb: 78, 87, 212;
     --c-body: #302d2d;
     --font-base: "Rajdhani", san-serif;
-    --box-shadow: 0px 15px 25px rgba(0,0,0,0.05);
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.15);
     --transition: all 0.5s ease;
 }
 
@@ -42,6 +42,12 @@ img{
 .section-top{
     padding: 140px 0px;
 }
+
+/* Helper Class */
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
 
 /* Navbar Styling */
 
@@ -100,6 +106,28 @@ img{
     padding: 3em;
 }
 
+.icon-box{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    font-size: 40px;
+}
+
+.ri-vip-crown-2-fill{
+    color: goldenrod;
+}
+
+.ri-lightbulb-flash-fill{
+    color: rgb(4, 4, 255);
+}
+
+.ri-timer-fill{
+    color: rgb(67, 160, 160);
+}
+
  /* services */
 
  #services{
@@ -110,5 +138,42 @@ img{
 
 .card-img-top{
     height: 350px;
+    width: 100%;
+}
+
+/* Portfolio */
+
+#portfolio{
+    padding: 3em;
+}
+
+.prt-img{
+    width: 100%;
+    height: 120px;
+}
+
+
+/* Testimonials */
+
+#reviews{
+    padding: 5em 3em;
+    background: linear-gradient(rgba(0, 0, 230, 0.6), rgba(206, 31, 200, 0.7)), url(../imgs/019_portfolio-bg.jpg);
+    width: 100%;
+}
+
+/* team */
+
+.team-img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+/* Contact Us */
+
+#contact{
+    padding: 5em 3em;
+    background: linear-gradient(rgba(0, 0, 230, 0.6), rgba(206, 31, 200, 0.7)), url(../imgs/019_portfolio-bg.jpg);
     width: 100%;
 }
